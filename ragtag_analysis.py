@@ -19,6 +19,6 @@ sequence_length=len(genome.seq)
 SeqIO.write(genome,'sample.fasta',"fasta")
 
 print('scaffold has been saved')
-print('Sequence Length: %d'%sequence_length)
+print('Sequence Length: %d bp'%sequence_length)
 print('GC Percent: %0.2f'%gc_genome_percent)
 
