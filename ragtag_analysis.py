@@ -16,7 +16,7 @@ gc_genome=genome.seq.count('G')+ genome.seq.count('C')
 gc_genome_percent=GC(genome.seq) 
 sequence_length=len(genome.seq)
 
-SeqIO.write(genome,'sample.fasta',"fasta")
+SeqIO.write(genome,'MU45.fasta',"fasta")
 
 print('scaffold has been saved')
 print('Sequence Length: %d bp'%sequence_length)
