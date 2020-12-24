@@ -14,3 +14,6 @@ Python 3.5.5+
 Roary
 prokka
 
+Citation
+You just have to declare a statement.
+Analysis was done using scripts written by Vincent Appiah, University of Ghana
