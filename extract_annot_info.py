@@ -41,7 +41,8 @@ def get_stats(directory):
     pseudo_count=len(open(pseudo_gene_file,'r').readlines())
     counts.append(pseudo_count)
     features.append('Pseudogenes')
-
+    
+    print('Counting Annotated Features.............................')
     for feature,count in zip(features,counts):
         print("%s:%d"%(feature,count))
 
