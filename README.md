@@ -1,4 +1,4 @@
-# Comparative-Analysis-of-Microbial-genomes
+# Comparative-Analysis-of-Bacterial-genomes
 
 
 This Pipeline requires the following tools
