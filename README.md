@@ -1,14 +1,25 @@
 # Comparative-Analysis-of-Bacterial-genomes
 
 
+Installation instructions
+- Download and install anaconda(version 3 recommended)
+Add channels
+- conda config --add channels conda-forge
+- conda config --add channels bioconda
+- conda config --add channels daler
+
+
+
+
+
 This Pipeline requires the following tools
 SPAdes v11
 RagTag
-Python 3.5.5+
+Python 3.7+
   -Biopython
   -matplotlib
   -matplotlib-venn
-  -numpy
+  -numpyconda config --add channels daler
   -pandas
 
 Roary
