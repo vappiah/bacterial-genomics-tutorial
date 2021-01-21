@@ -12,22 +12,14 @@ git clone https://github.com/vappiah/bacterial-genomics.git
 cd bacterial-genomics
 conda env create -f environment.yaml
 
+Download the polishing tool 
+wget https://github.com/broadinstitute/pilon/releases/download/v1.23/pilon-1.23.jar -O pilon.jar
 Activate environment
 source activate bacterial-genomics
 
 
-This Pipeline requires the following tools
-SPAdes v11
-RagTag
-Python 3.7+
-  -Biopython
-  -matplotlib
-  -matplotlib-venn
-  -numpyconda config --add channels daler
-  -pandas
+This Pipeline a collection of tools listed in the environment.yaml file to perform comparative bacterial genome analysis
 
-Roary
-prokka
 
 Citation
 You just have to declare a statement.
