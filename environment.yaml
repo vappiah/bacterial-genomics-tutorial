@@ -1,0 +1,26 @@
+name: bacterial-genomics
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - samtools
+  - bwa
+  - python=3
+  - minimap2
+  - ragtag
+  - abricate
+  - mlst
+  - sratoolkit
+  - spades
+  - minimap2
+  - mummer
+  - roary
+  - prokka
+  - pip
+  - pip:
+      - numpy
+      - matplotlib
+      - matplotlib-venn
+      - biopython
+      - dREP
