@@ -1,15 +1,19 @@
 # Comparative-Analysis-of-Bacterial-genomes
 
 
-Installation instructions
+Installation instructionshttps://github.com/vappiah/bacterial-genomics
 - Download and install anaconda(version 3 recommended)
 Add channels
 - conda config --add channels conda-forge
 - conda config --add channels bioconda
 - conda config --add channels daler
 
+git clone https://github.com/vappiah/bacterial-genomics.git
+cd bacterial-genomics
+conda env create -f environment.yaml
 
-
+Activate environment
+source activate bacterial-genomics
 
 
 This Pipeline requires the following tools
