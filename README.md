@@ -68,9 +68,10 @@ chmod +x *.{py,sh,pl}
 python get_annotat_stats.sh P7741
 
 #Generate dendogram
-This Pipeline a collection of tools listed in the environment.yaml file to perform comparative bacterial genome analysis
 
+./dendogram.sh
 
+#combine all results
 Citation
 You just have to declare a statement.
 Analysis was done using scripts written by Vincent Appiah, University of Ghana
