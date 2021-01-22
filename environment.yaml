@@ -19,6 +19,7 @@ dependencies:
   - roary
   - mafft
   - prokka
+  - quast
   - pip
   - pip:
       - numpy
