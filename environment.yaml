@@ -15,7 +15,9 @@ dependencies:
   - spades
   - minimap2
   - mummer
+  - mash
   - roary
+  - mafft
   - prokka
   - pip
   - pip:
