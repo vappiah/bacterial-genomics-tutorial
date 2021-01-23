@@ -1,7 +1,7 @@
 # Comparative-Analysis-of-Bacterial-genomes
 
 
-#Installation instructionshttps://github.com/vappiah/bacterial-genomics
+#Installation instructionshttps://github.com/vappiah/bacterial-genomics-tutorial
 #- Download and install anaconda(version 3 recommended)
 #Add channels
 conda config --add channels conda-forge
@@ -58,17 +58,25 @@ chmod +x *.{py,sh,pl}
 #Check for antimicrobial resistance genes using abricate
 ./amr.sh
 
-
 #Annotate the draft genome using prokka
 ./annotate.sh
 
 #Get some statistics on the annotation. Features such as genes, CDS will be counted and displayed. The scripts requires you to specify the folder where annotations were saved . i.e. P7741
 #Python should be used to run that script
-
 python get_annotat_stats.sh P7741
 
 #Generate dendogram using dREP
 ./dendogram.sh
+
+#Perform Pangenome Analysis using Roary. Input files are gff (version 3 ) format. It is recommended to use prokka generated gff
+#So we generate the gffs for the files in the genome folder by reannotating with prokka. We use the get_genome_gffs script
+./get_genome_gffs.sh
+
+#then perform pangenome analysis
+./get_pangenome.sh
+
+#get gene summary for three of the organism. the default is P7741 Agy99 and SGL03. Feel free to change it. The venn diagram will be generated(gene_summary.jpg)
+python get_gene_summary.py P7741 Agy99 and SGL03 pangenome/gene_presence_absence.csv
 
 #Visualize your genome by generating ring structures using BRIG. This can be done using the video tutorial here
 https://youtu.be/pobQgE4z-5Q
