@@ -16,7 +16,6 @@ group={'A':lists[0],'B':lists[1],'C':lists[2]}
 
 subset={}
 
-#gene_presence_absence='/home/kobina/researchprojects/Workflows/Microbial genomics/roaryresult/gene_presence_absence.csv'
 
 #order='A','B','AB','C','AC','BC','ABC'
 
@@ -61,8 +60,8 @@ def draw_venn(df):
         venn_values.append(subset[key])
         
     venn3_unweighted(subsets=venn_values,set_labels=(group['A'],group['B'],group['C']),alpha=0.7)
+    plt.title('Gene Count')
     plt.savefig('gene_count_summary.jpg')
-    plt.show()
     
 
 try:
