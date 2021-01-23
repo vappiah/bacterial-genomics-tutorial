@@ -74,7 +74,7 @@ python get_annotat_stats.sh P7741
 https://youtu.be/pobQgE4z-5Q
 
 #If you are working on a cluster you will want to combine the analysis results into a zip file for download and view locally. 
-zip -r results P7741* mlst.csv amr.summary.tab dendogram pangenome results
+zip -r results QC_ASSEMBLY P7741* mlst.csv amr.summary.tab dendogram pangenome results
 
 #Now that you have been able to perform a bacterial comparative genome analysis. Its time to apply your skills on a real world data.
 #Good luck and see you next time
