@@ -1,4 +1,4 @@
-name: bacterial-genomics
+name: bacterial-genomics-tutorial
 channels:
   - conda-forge
   - bioconda
