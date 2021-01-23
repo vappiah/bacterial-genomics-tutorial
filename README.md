@@ -63,7 +63,7 @@ chmod +x *.{py,sh,pl}
 
 #Get some statistics on the annotation. Features such as genes, CDS will be counted and displayed. The scripts requires you to specify the folder where annotations were saved . i.e. P7741
 #Python should be used to run that script
-python get_annotat_stats.sh P7741
+python get_annotat_stats.py P7741
 
 #Generate dendogram using dREP
 ./dendogram.sh
