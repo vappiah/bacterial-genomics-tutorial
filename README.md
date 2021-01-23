@@ -46,16 +46,16 @@ chmod +x *.{py,sh,pl}
 #You can also modify the script to use the contigs and compare the result 
 ./polish.sh
 
-#Reorder contigs agains a reference genome using ragtag to generate a draft genome
+#Perform QC for both raw assembly and polished assembly
+./qc_assembly.sh
 
+#Reorder contigs agains a reference genome using ragtag to generate a draft genome
 ./reorder_contigs.sh
 
 #Perform a multi locus sequence typing using MLST software
-
 ./mlst.sh
 
 #Check for antimicrobial resistance genes using abricate
-
 ./amr.sh
 
 
@@ -67,11 +67,18 @@ chmod +x *.{py,sh,pl}
 
 python get_annotat_stats.sh P7741
 
-#Generate dendogram
-
+#Generate dendogram using dREP
 ./dendogram.sh
 
-#combine all results
+#Visualize your genome by generating ring structures using BRIG. This can be done using the video tutorial here
+https://youtu.be/pobQgE4z-5Q
+
+#If you are working on a cluster you will want to combine the analysis results into a zip file for download and view locally. 
+zip -r results P7741* mlst.csv amr.summary.tab dendogram pangenome results
+
+#Now that you have been able to perform a bacterial comparative genome analysis. Its time to apply your skills on a real world data.
+#Good luck and see you next time
+
 Citation
 You just have to declare a statement.
 Analysis was done using scripts written by Vincent Appiah, University of Ghana
