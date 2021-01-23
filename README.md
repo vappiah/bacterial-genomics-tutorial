@@ -37,7 +37,7 @@ chmod +x *.{py,sh,pl}
 
 #Step 1: Download data
 
-./download_data
+./download_data.sh
 
 #Perform de novo assembly using spades
 ./assemble.sh
@@ -63,7 +63,7 @@ chmod +x *.{py,sh,pl}
 
 #Get some statistics on the annotation. Features such as genes, CDS will be counted and displayed. The scripts requires you to specify the folder where annotations were saved . i.e. P7741
 #Python should be used to run that script
-python get_annotat_stats.py P7741
+python get_annotat_stats.PY P7741
 
 #Generate dendogram using dREP
 ./dendogram.sh
@@ -75,7 +75,7 @@ python get_annotat_stats.py P7741
 #then perform pangenome analysis
 ./get_pangenome.sh
 
-#get gene summary for three of the organism. the default is P7741 Agy99 and SGL03. Feel free to change it. The venn diagram will be generated(gene_summary.jpg)
+#get gene summary for three of the organism. the default is P7741 Agy99 and SGL03. Feel free to change it. A venn diagram will be generated(gene_summary.jpg)
 python get_gene_summary.py P7741 Agy99 and SGL03 pangenome/gene_presence_absence.csv
 
 #Visualize your genome by generating ring structures using BRIG. This can be done using the video tutorial here
