@@ -10,7 +10,7 @@ conda config --add channels daler
 conda config --add channels defaults
 
 #Download the Analysis pipeline
-git clone https://github.com/vappiah/bacterial-genomics.git
+git clone https://github.com/vappiah/bacterial-genomics-tutorial.git
 
 #Change directory to the dowloaded folder
 cd bacterial-genomics
