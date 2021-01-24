@@ -2,11 +2,16 @@
 
 
 #Installation instructionshttps://github.com/vappiah/bacterial-genomics-tutorial
+
 #- Download and install anaconda(version 3 recommended)
+
 #Add channels
 conda config --add channels conda-forge
+
 conda config --add channels bioconda
+
 conda config --add channels daler
+
 conda config --add channels defaults
 
 #Download the Analysis pipeline
