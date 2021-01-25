@@ -6,6 +6,7 @@
 #- Download and install anaconda(version 3 recommended)
 
 #Add channels
+
 conda config --add channels conda-forge
 
 conda config --add channels bioconda
@@ -15,13 +16,16 @@ conda config --add channels daler
 conda config --add channels defaults
 
 #Download the Analysis pipeline
+
 git clone https://github.com/vappiah/bacterial-genomics-tutorial.git
 
 #Change directory to the dowloaded folder
+
 cd bacterial-genomics
 
-#Create conda environment. Packages are listed in the environment.yaml file 
-conda env create -f environment.yaml
+#Create conda environment. Packages are listed in the environment.yaml file . --quiet flag is used so that conda installs packages without confirmation. 
+
+conda env create --quiet -f environment.yaml
 
 #Download the polishing tool pilon
 
@@ -32,7 +36,7 @@ wget https://github.com/broadinstitute/pilon/releases/download/v1.23/pilon-1.23.
 
 #Activate environment
 
-source activate bacterial-genomics
+source activate bacterial-genomics-tutorial
 
 #add permission to all scripts
 chmod +x *.{py,sh,pl}
