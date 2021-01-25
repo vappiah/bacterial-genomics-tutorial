@@ -79,4 +79,4 @@ try:
     
         draw_venn(df)
 except:
-    'Error has occuted. Make sure you specified the correct file'
+    'Error has occured. Make sure you specified the correct file'
