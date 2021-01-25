@@ -1,0 +1,6 @@
+numpy
+matplotlib
+matplotlib-venn
+biopython
+dREP
+
