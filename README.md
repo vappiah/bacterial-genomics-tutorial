@@ -21,7 +21,7 @@ git clone https://github.com/vappiah/bacterial-genomics-tutorial.git
 
 #Change directory to the dowloaded folder
 
-cd bacterial-genomics
+cd bacterial-genomics-tutorial
 
 #Create conda environment. Packages are listed in the environment.yaml file . --quiet flag is used so that conda installs packages without confirmation. 
 
@@ -41,6 +41,9 @@ source activate bacterial-genomics-tutorial
 #add permission to all scripts
 chmod +x *.{py,sh,pl}
 
+#Install python packages using pip
+
+pip install -r pip-requirements.txt
 
 #TIME FOR ANALYSIS
 
@@ -50,7 +53,7 @@ chmod +x *.{py,sh,pl}
 
 #Trim Reads
 
-./trim_reads
+./trim_reads.sh
 
 #Perform de novo assembly using spades
 
@@ -85,7 +88,7 @@ chmod +x *.{py,sh,pl}
 
 #Python should be used to run that script
 
-python get_annotat_stats.PY P7741
+python get_annotat_stats.py P7741
 
 #Generate dendogram using dREP
 
