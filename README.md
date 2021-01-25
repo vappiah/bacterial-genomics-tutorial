@@ -53,7 +53,7 @@ pip install -r pip-requirements.txt
 
 #Trim Reads
 
-./trim_reads.sh
+#./trim_reads.sh
 
 #Perform de novo assembly using spades
 
@@ -105,14 +105,14 @@ python get_annotat_stats.py P7741
 
 #get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_summary.jpg)
 
-python get_gene_summary.py P7741 Agy99 and SGL03 pangenome/gene_presence_absence.csv
+python get_count_summary.py P7741 Agy99 and SGL03 pangenome/gene_presence_absence.csv
 
 #Visualize your genome by generating ring structures using BRIG. This can be done using the video tutorial here
 
 https://youtu.be/pobQgE4z-5Q
 
 #If you are working on a cluster you will want to combine the analysis results into a zip file for download and view locally. 
-zip -r results QC_ASSEMBLY P7741* mlst.csv amr.summary.tab dendogram pangenome *.jpg results
+zip -r results QC_ASSEMBLY P7741* mlst.csv amr.summary.tab dendogram pangenome *.jpg
 
 #Now that you have been able to perform a bacterial comparative genome analysis. Its time to apply your skills on a real world data.
 #Good luck and see you next time
