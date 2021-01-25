@@ -44,9 +44,12 @@ chmod +x *.{py,sh,pl}
 
 #TIME FOR ANALYSIS
 
-#Step 1: Download data
+#Step 1: Download data. W
 
 ./download_data.sh
+
+#Trim Reads
+./trim_reads
 
 #Perform de novo assembly using spades
 ./assemble.sh
@@ -56,6 +59,7 @@ chmod +x *.{py,sh,pl}
 ./polish.sh
 
 #Perform QC for both raw assembly and polished assembly
+
 ./qc_assembly.sh
 
 #Reorder contigs agains a reference genome using ragtag to generate a draft genome
@@ -71,7 +75,9 @@ chmod +x *.{py,sh,pl}
 ./annotate.sh
 
 #Get some statistics on the annotation. Features such as genes, CDS will be counted and displayed. The scripts requires you to specify the folder where annotations were saved . i.e. P7741
+
 #Python should be used to run that script
+
 python get_annotat_stats.PY P7741
 
 #Generate dendogram using dREP
