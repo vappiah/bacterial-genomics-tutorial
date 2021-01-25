@@ -100,7 +100,7 @@ python get_annotat_stats.PY P7741
 
 ./get_pangenome.sh
 
-#get gene summary for three of the organism. the default is P7741 Agy99 and SGL03. Feel free to change it. A venn diagram will be generated(gene_summary.jpg)
+#get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_summary.jpg)
 
 python get_gene_summary.py P7741 Agy99 and SGL03 pangenome/gene_presence_absence.csv
 
