@@ -21,6 +21,8 @@ dependencies:
   - mafft
   - prokka
   - quast
+  - trimmomatic
+  - porechop
   - pip
   - pip:
       - numpy
