@@ -2,10 +2,10 @@
 
 
 mkdir data
-wget --no-check-certificate http://ftp.sra.ebi.ac.uk/vol1/run/ERR333/ERR3335404/P7741_R1.fastq.gz
-wget --no-check-certificate http://ftp.sra.ebi.ac.uk/vol1/run/ERR333/ERR3335404/P7741_R2.fastq.gz
-wget --no-check-certificate http://ftp.sra.ebi.ac.uk/vol1/run/ERR333/ERR3336325/all_minion.fastq.tar.gz
+wget --no-check-certificate ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR333/004/ERR3335404/ERR3335404_1.fastq.gz -O data/P7741_R1.fastq.gz
+wget --no-check-certificate ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR333/004/ERR3335404/ERR3335404_2.fastq.gz -O data/P7741_R2.fastq.gz
+wget --no-check-certificate https://sra-pub-src-1.s3.amazonaws.com/ERR3336325/all_minion.fastq.1 -O data/P7741_minion.fastq
 
 
-#move reads to data directory
-mv P7741*.gz data/
+
+
