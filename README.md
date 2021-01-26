@@ -50,8 +50,15 @@ pip install -r pip-requirements.txt
 
 ./download_data.sh
 
+#perform QC on the raw reads
+
+./qc_raw_reads.sh
+
 #Trim reads using sickle
-./trim_reads
+./trim_reads.sh
+
+#perform QC on the trimmed reads
+./qc_trimmed_reads.sh
 
 #Perform de novo assembly using spades
 
