@@ -56,7 +56,6 @@ def draw_venn(df):
     #print(group.keys())
 
     for key in ['A','B','AB','C','AC','BC','ABC']:
-        print(key,subset[key])
         venn_values.append(subset[key])
         
     venn3_unweighted(subsets=venn_values,set_labels=(group['A'],group['B'],group['C']),alpha=0.7)
