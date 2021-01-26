@@ -50,10 +50,6 @@ pip install -r pip-requirements.txt
 
 ./download_data.sh
 
-#Trim Reads
-
-#./trim_reads.sh
-
 #Perform de novo assembly using spades
 
 ./assemble.sh
