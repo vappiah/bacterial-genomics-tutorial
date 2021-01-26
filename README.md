@@ -50,6 +50,9 @@ pip install -r pip-requirements.txt
 
 ./download_data.sh
 
+#Trim reads using sickle
+./trim_reads
+
 #Perform de novo assembly using spades
 
 ./assemble.sh
