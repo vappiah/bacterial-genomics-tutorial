@@ -1,8 +1,6 @@
 # Comparative-Analysis-of-Bacterial-genomes
 
 
-#Installation instructionshttps://github.com/vappiah/bacterial-genomics-tutorial
-
 #- Download and install anaconda(version 3 recommended)
 
 #Add channels
@@ -23,7 +21,7 @@ git clone https://github.com/vappiah/bacterial-genomics-tutorial.git
 
 cd bacterial-genomics-tutorial
 
-#Create conda environment. Packages are listed in the environment.yaml file . --quiet flag is used so that conda installs packages without confirmation. 
+#Create conda environment. Packages are listed in the environment.yaml file --quiet flag is used so that conda installs packages without confirmation. 
 
 conda env create --quiet -f environment.yaml
 
@@ -39,6 +37,7 @@ wget https://github.com/broadinstitute/pilon/releases/download/v1.23/pilon-1.23.
 source activate bacterial-genomics-tutorial
 
 #add permission to all scripts
+
 chmod +x *.{py,sh,pl}
 
 #Install python packages using pip
@@ -68,7 +67,7 @@ pip install -r pip-requirements.txt
 
 ./qc_assembly.sh
 
-#Reorder contigs agains a reference genome using ragtag to generate a draft genome
+#Generate draft genome by reordering contigs against a reference genome using ragtag
 
 ./reorder_contigs.sh
 
@@ -95,6 +94,7 @@ python get_annotat_stats.py P7741
 ./dendogram.sh
 
 #Perform Pangenome Analysis using Roary. Input files are gff (version 3 ) format. It is recommended to use prokka generated gff
+
 #So we generate the gffs for the files in the genome folder by reannotating with prokka. We use the get_genome_gffs script
 
 ./get_genome_gffs.sh
@@ -103,16 +103,14 @@ python get_annotat_stats.py P7741
 
 ./get_pangenome.sh
 
-#get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_summary.jpg)
+#get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_count_summary.jpg)
 
 python gene_count_summary.py P7741 Agy99 Liflandii pangenome/gene_presence_absence.csv
 
-#Visualize your genome by generating ring structures using BRIG. This can be done using the video tutorial here
-
-https://youtu.be/pobQgE4z-5Q
-
 #If you are working on a cluster you will want to combine the analysis results into a zip file for download and view locally. 
-zip -r results QC_ASSEMBLY P7741* mlst.csv amr.summary.tab dendogram pangenome *.jpg
+./zip_results.sh
+
+#Compare your draft genome with the other organisms in the genomes folder by generating circular structures for them . Use the tutorial here to guide you https://youtu.be/pobQgE4z-5Q
 
 #Now that you have been able to perform a bacterial comparative genome analysis. Its time to apply your skills on a real world data.
 #Good luck and see you next time
