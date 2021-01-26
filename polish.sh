@@ -6,8 +6,8 @@ threads=4
 
 currdir=$(pwd)
 pilon=$currdir/apps/pilon.jar
-read1=$currdir/data/P7741_R1.fastq.gz
-read2=$currdir/data/P7741_R2.fastq.gz  
+read1=$currdir/trimmed_reads/P7741_R1.fastq.gz
+read2=$currdir/trimmed_reads/P7741_R2.fastq.gz  
 
 
 mkdir polishing_process
