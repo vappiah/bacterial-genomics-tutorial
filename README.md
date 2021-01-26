@@ -83,7 +83,7 @@ pip install -r pip-requirements.txt
 
 #Python should be used to run that script
 
-python get_annot_stats.py P7741
+python get_annot_stats.py P7741_annotation P7741
 
 #Generate dendogram using dREP
 
