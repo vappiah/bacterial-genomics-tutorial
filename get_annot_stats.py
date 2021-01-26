@@ -6,9 +6,11 @@ import os
 features=['CDS','gene','tRNA', 'tmRNA', 'rRNA',]
 
 directory=sys.argv[1]
+prefix=sys.argv[2]
 
-def get_stats(directory):
-    bname=os.path.split(directory)[-1]
+def get_stats(directory,prefix):
+    #bname=os.path.split(directory)[-1]
+    bname=prefix
     stats_dict={}
 
     genebank='%s/%s.gbk'%(directory,bname)
@@ -48,4 +50,4 @@ def get_stats(directory):
 
   
 
-get_stats(directory)
+get_stats(directory,prefix)
