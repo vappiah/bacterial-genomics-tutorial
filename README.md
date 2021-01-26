@@ -105,7 +105,7 @@ python get_annotat_stats.py P7741
 
 #get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_summary.jpg)
 
-python get_count_summary.py P7741 Agy99 and SGL03 pangenome/gene_presence_absence.csv
+python gene_count_summary.py P7741 Agy99 Liflandii pangenome/gene_presence_absence.csv
 
 #Visualize your genome by generating ring structures using BRIG. This can be done using the video tutorial here
 
