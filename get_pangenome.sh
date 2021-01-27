@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Pangenome analysis using roary and fasttree
+
+#increase the number of threads if you have more cpu cores
 threads=4
 
 #Identify pangenomes
