@@ -124,5 +124,4 @@ python gene_count_summary.py P7741 Agy99 Liflandii pangenome/gene_presence_absen
 #Good luck and see you next time
 
 Citation
-You just have to declare a statement.
-Analysis was done using scripts written by Vincent Appiah, University of Ghana
+Vincent Appiah, 2020.  Bacterial Genomics Tutorial  https://github.com/vappiah/bacterial-genomics-tutorial
