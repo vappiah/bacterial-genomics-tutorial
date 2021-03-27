@@ -15,29 +15,31 @@ conda config --add channels daler
 conda config --add channels defaults
 ```
 
-### Download the Analysis pipeline
+Download the Analysis pipeline
 
-'''
+```
 git clone https://github.com/vappiah/bacterial-genomics-tutorial.git
-'''
+```
 
-### Change directory to the dowloaded folder
+Change directory to the dowloaded folder
 
-'''
+```
 cd bacterial-genomics-tutorial
-'''
+```
 
-### Create conda environment.
-#### Packages are listed in the environment.yaml file --quiet flag is used so that conda installs packages without confirmation. 
+Create conda environment.Packages are listed in the environment.yaml file --quiet flag is used so that conda installs packages without confirmation. 
 
+```
 conda env create --quiet -f environment.yaml
+```
 
-### Download the polishing tool pilon
+Download the polishing tool pilon
 
+```
 mkdir apps
 
 wget https://github.com/broadinstitute/pilon/releases/download/v1.23/pilon-1.23.jar -O apps/pilon.jar
-
+```
 
 ### Activate environment
 
