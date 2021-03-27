@@ -5,21 +5,21 @@
 
 ### Add channels
 
-```conda config --add channels conda-forge
+``` conda config --add channels conda-forge
 
 conda config --add channels bioconda
 
 conda config --add channels daler
 
-conda config --add channels defaults```
+conda config --add channels defaults ```
 
 ### Download the Analysis pipeline
 
-git clone https://github.com/vappiah/bacterial-genomics-tutorial.git
+'''git clone https://github.com/vappiah/bacterial-genomics-tutorial.git'''
 
 ### Change directory to the dowloaded folder
 
-cd bacterial-genomics-tutorial
+'''cd bacterial-genomics-tutorial'''
 
 ### Create conda environment.
 #### Packages are listed in the environment.yaml file --quiet flag is used so that conda installs packages without confirmation. 
@@ -97,33 +97,36 @@ pip install -r pip-requirements.txt
 
 #Python should be used to run that script
 
-python get_annot_stats.py P7741_annotation P7741
+``` python get_annot_stats.py P7741_annotation P7741``` 
 
 #Generate dendogram using dREP
 
-./dendogram.sh
+``` ./dendogram.sh ```
 
 #Perform Pangenome Analysis using Roary. Input files are gff (version 3 ) format. It is recommended to use prokka generated gff
 
 #So we generate the gffs for the files in the genome folder by reannotating with prokka. We use the get_genome_gffs script
 
-./get_genome_gffs.sh
+```./get_genome_gffs.sh ```
 
 #then perform pangenome analysis
 
-./get_pangenome.sh
+``` ./get_pangenome.sh ```
 
 #get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_count_summary.jpg)
 
-python gene_count_summary.py P7741 Agy99 Liflandii pangenome/gene_presence_absence.csv
+```python gene_count_summary.py P7741 Agy99 Liflandii pangenome/gene_presence_absence.csv```
 
-#If you are working on a cluster you will want to combine the analysis results into a zip file for download and view locally. 
+
+If you are working on a cluster you will want to combine the analysis results into a zip file for download and view locally. 
 ./zip_results.sh
 
-#Compare your draft genome with the other organisms in the genomes folder by generating circular structures for them . Use the tutorial here to guide you https://youtu.be/pobQgE4z-5Q
 
-#Now that you have been able to perform a bacterial comparative genome analysis. Its time to apply your skills on a real world data.
-#Good luck and see you next time
+Compare your draft genome with the other organisms in the genomes folder by generating circular structures for them . Use the tutorial here to guide you https://youtu.be/pobQgE4z-5Q
+
+
+Now that you have been able to perform a bacterial comparative genome analysis. Its time to apply your skills on a real world data.
+Good luck and see you next time
 
 Citation
 Vincent Appiah, 2020.  Bacterial Genomics Tutorial  https://github.com/vappiah/bacterial-genomics-tutorial
