@@ -5,13 +5,13 @@
 
 ### Add channels
 
-conda config --add channels conda-forge
+```conda config --add channels conda-forge
 
 conda config --add channels bioconda
 
 conda config --add channels daler
 
-conda config --add channels defaults
+conda config --add channels defaults```
 
 ### Download the Analysis pipeline
 
