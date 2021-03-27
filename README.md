@@ -92,10 +92,10 @@ Generate draft genome by reordering contigs against a reference genome using rag
 ```
 ./reorder_contigs.sh
 ```
-#Perform a multi locus sequence typing using MLST software
-
+Perform a multi locus sequence typing using MLST software
+```
 ./mlst.sh
-
+```
 Check for antimicrobial resistance genes using abricate
 ```
 ./amr.sh
@@ -112,12 +112,13 @@ Generate dendogram using dREP
 ``` ./dendogram.sh ```
 
 Perform Pangenome Analysis using Roary. Input files are gff (version 3 ) format. It is recommended to use prokka generated gff. So we generate the gffs for the files in the genome folder by reannotating with prokka. We use the get_genome_gffs script
-
 ```./get_genome_gffs.sh ```
 
 Then perform pangenome analysis
 
-``` ./get_pangenome.sh ```
+``` 
+./get_pangenome.sh
+```
 
 Get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_count_summary.jpg)
 
