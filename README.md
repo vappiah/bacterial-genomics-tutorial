@@ -72,8 +72,8 @@ Trim reads using sickle
 ./trim_reads.sh
 ```
 Perform QC on the trimmed reads
-``` ./qc_trimmed_reads.sh
-```
+
+``` ./qc_trimmed_reads.sh```
 
 Perform de novo assembly using spades
 ```
@@ -106,11 +106,9 @@ Annotate the draft genome using prokka
 ```
 Get some statistics on the annotation. Features such as genes, CDS will be counted and displayed. The scripts requires you to specify the folder where annotations were saved . i.e. P7741
 Python should be used to run that script
-
 ``` python get_annot_stats.py P7741_annotation P7741``` 
 
-#Generate dendogram using dREP
-
+Generate dendogram using dREP
 ``` ./dendogram.sh ```
 
 Perform Pangenome Analysis using Roary. Input files are gff (version 3 ) format. It is recommended to use prokka generated gff. So we generate the gffs for the files in the genome folder by reannotating with prokka. We use the get_genome_gffs script
