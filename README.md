@@ -106,6 +106,7 @@ Annotate the draft genome using prokka
 ```
 Get some statistics on the annotation. Features such as genes, CDS will be counted and displayed. The scripts requires you to specify the folder where annotations were saved . i.e. P7741
 Python should be used to run that script
+
 ``` python get_annot_stats.py P7741_annotation P7741``` 
 
 Generate dendogram using dREP
