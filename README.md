@@ -5,21 +5,27 @@
 
 ### Add channels
 
-```conda config --add channels conda-forge
+```
+conda config --add channels conda-forge
 
 conda config --add channels bioconda
 
 conda config --add channels daler
 
-conda config --add channels defaults```
+conda config --add channels defaults
+```
 
 ### Download the Analysis pipeline
 
-'''git clone https://github.com/vappiah/bacterial-genomics-tutorial.git'''
+'''
+git clone https://github.com/vappiah/bacterial-genomics-tutorial.git
+'''
 
 ### Change directory to the dowloaded folder
 
-'''cd bacterial-genomics-tutorial'''
+'''
+cd bacterial-genomics-tutorial
+'''
 
 ### Create conda environment.
 #### Packages are listed in the environment.yaml file --quiet flag is used so that conda installs packages without confirmation. 
