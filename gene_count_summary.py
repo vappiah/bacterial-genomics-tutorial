@@ -58,6 +58,7 @@ def draw_venn(df):
     venn3_unweighted(subsets=venn_values,set_labels=(group['A'],group['B'],group['C']),alpha=0.7)
     plt.title('Gene Count')
     plt.savefig('gene_count_summary.png')
+    print('figure saved')
     
 
 try:
