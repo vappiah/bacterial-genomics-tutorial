@@ -124,7 +124,7 @@ Then perform pangenome analysis
 ./get_pangenome.sh
 ```
 
-### Step 15: Get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_count_summary.jpg)
+### Step 15: Get gene summary for three of the organism. the default is P7741 Agy99 and Liflandii. Feel free to change it. A venn diagram will be generated(gene_count_summary.png)
 
 ```python gene_count_summary.py P7741 Agy99 Liflandii pangenome/gene_presence_absence.csv```
 
