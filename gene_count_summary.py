@@ -1,12 +1,9 @@
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib_venn import venn2, venn2_circles, venn2_unweighted
 from matplotlib_venn import venn3, venn3_circles, venn3_unweighted
 from matplotlib import pyplot as plt
 
-
-#lists=['Agy99','MU45','SGL03']
 import sys
 
 lists=sys.argv[1:4]
@@ -60,7 +57,7 @@ def draw_venn(df):
         
     venn3_unweighted(subsets=venn_values,set_labels=(group['A'],group['B'],group['C']),alpha=0.7)
     plt.title('Gene Count')
-    plt.savefig('gene_count_summary.jpg')
+    plt.savefig('gene_count_summary.png')
     
 
 try:
