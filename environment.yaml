@@ -13,7 +13,6 @@ dependencies:
   - ragtag
   - abricate
   - mlst
-  - sratoolkit
   - spades
   - minimap2
   - mummer
