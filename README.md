@@ -27,10 +27,10 @@ git clone https://github.com/vappiah/bacterial-genomics-tutorial.git
 cd bacterial-genomics-tutorial
 ```
 
-### Create conda environment.Packages are listed in the environment.yaml file --quiet flag is used so that conda installs packages without confirmation. 
+### Create conda environment.Packages are listed in the environment.yaml file. 
 
 ```
-conda env create --quiet -f environment.yaml
+conda env create -f environment.yaml
 ```
 
 ### Download the polishing tool pilon
