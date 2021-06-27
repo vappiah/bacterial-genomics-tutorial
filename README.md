@@ -145,5 +145,7 @@ Good luck and see you next time
 
 Citation
 Vincent Appiah, 2020.  Bacterial Genomics Tutorial  https://github.com/vappiah/bacterial-genomics-tutorial
+
 or
+
 Vincent Appiah,2020. Youtube https://youtu.be/S_sRo_85jhs
