@@ -1,4 +1,5 @@
 # Comparative-Analysis-of-Bacterial-genomes
+# Additional tutorials are on my youtube channel: https://www.youtube.com/channel/UCOJM9xzqDc6-43j2x_vXqCQ
 
 
 #- Download and install anaconda(version 3 recommended)
@@ -144,3 +145,5 @@ Good luck and see you next time
 
 Citation
 Vincent Appiah, 2020.  Bacterial Genomics Tutorial  https://github.com/vappiah/bacterial-genomics-tutorial
+or
+Vincent Appiah,2020. Youtube https://youtu.be/S_sRo_85jhs
