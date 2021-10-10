@@ -23,6 +23,7 @@ dependencies:
   - quast
   - sickle-trim
   - porechop
+  - sra-tools
   - pip
   - pip:
       - numpy
