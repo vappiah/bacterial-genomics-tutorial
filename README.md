@@ -1,8 +1,8 @@
 # Comparative-Analysis-of-Bacterial-genomes
 Bioinformatics analysis can be challenging especially for new entrants. The purpose of this repo is to provide scripts that one can quickly use to perform comparative analysis of bacterial genomes. The scripts have been designed to automate majority of tasks so that beginners can get their hands dirty without having to struggle to assemble and use the analysis tools
 
-More bioinformatics tutorials can be found on my youtube channel: https://www.youtube.com/channel/UCOJM9xzqDc6-43j2x_vXqCQ
-[You can buy me a coffee: https://www.buymeacoffee.com/bioinfocoach]
+More bioinformatics tutorials can be found on my youtube channel: https://www.youtube.com/channel/UCOJM9xzqDc6-43j2x_vXqCQ \
+[You can buy me a coffee: https://www.buymeacoffee.com/bioinfocoach] \
 Here is a playlist for bacterial genome analysis: https://www.youtube.com/playlist?list=PLe1-kjuYBZ074A06NOuO9rXCTD3ddoOyz
 
 
@@ -39,8 +39,7 @@ conda env create -f environment.yaml
 ### Download the polishing tool pilon
 
 ```
-mkdir apps
-
+mkdir apps\
 wget https://github.com/broadinstitute/pilon/releases/download/v1.23/pilon-1.23.jar -O apps/pilon.jar
 ```
 
@@ -92,15 +91,15 @@ This is meant to improve the draft assembly. The scaffolds will be used. You can
 ./qc_assembly.sh
 ```
 
-### Step 8: Generate draft genome by reordering contigs against a reference genome using ragtag
+### Step 8: Generate draft genome by reordering contigs against a reference genome using ragtag\
 ```
 ./reorder_contigs.sh
 ```
-### Step 9: Perform a multi locus sequence typing using MLST software
+### Step 9: Perform a multi locus sequence typing using MLST software\
 ```
 ./mlst.sh
 ```
-### Step 10: Check for antimicrobial resistance genes using abricate
+### Step 10: Check for antimicrobial resistance genes using abricate\
 ```
 ./amr.sh
 ```
@@ -114,15 +113,14 @@ Python should be used to run that script
 
 ``` python get_annot_stats.py P7741_annotation P7741``` 
 
-### Step 13: Generate dendogram using dREP
+### Step 13: Generate dendogram using dREP\
 ``` ./dendogram.sh ```
 
 ### Step 14: Perform Pangenome Analysis using Roary. 
-Input files are gff (version 3 ) format. It is recommended to use prokka generated gff. So we generate the gffs for the files in the genome folder by reannotating with prokka. We use the get_genome_gffs script
+Input files are gff (version 3 ) format. It is recommended to use prokka generated gff. So we generate the gffs for the files in the genome folder by reannotating with prokka. We use the get_genome_gffs script \
 ```./get_genome_gffs.sh ```
 
-Then perform pangenome analysis
-
+Then perform pangenome analysis\
 ``` 
 ./get_pangenome.sh
 ```
