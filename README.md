@@ -2,7 +2,9 @@
 Bioinformatics analysis can be challenging especially for new entrants. The purpose of this repo is to provide scripts that one can quickly use to perform comparative analysis of bacterial genomes. The scripts have been designed to automate majority of tasks so that beginners can get their hands dirty without having to struggle to assemble and use the analysis tools
 
 More bioinformatics tutorials can be found on my youtube channel: https://www.youtube.com/channel/UCOJM9xzqDc6-43j2x_vXqCQ
+[You can buy me a coffee: https://www.buymeacoffee.com/bioinfocoach]
 Here is a playlist for bacterial genome analysis: https://www.youtube.com/playlist?list=PLe1-kjuYBZ074A06NOuO9rXCTD3ddoOyz
+
 
 
 # Download and install anaconda(version 3 recommended)
@@ -10,13 +12,10 @@ Here is a playlist for bacterial genome analysis: https://www.youtube.com/playli
 ### Add channels
 
 ```
-conda config --add channels conda-forge
-
-conda config --add channels bioconda
-
-conda config --add channels daler
-
-conda config --add channels defaults
+conda config --add channels conda-forge\
+conda config --add channels bioconda\
+conda config --add channels daler\
+conda config --add channels defaults\
 ```
 
 ### Download the Analysis pipeline
