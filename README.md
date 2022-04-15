@@ -6,6 +6,9 @@ More bioinformatics tutorials can be found on my youtube channel: https://www.yo
 Here is a playlist for bacterial genome analysis: https://www.youtube.com/playlist?list=PLe1-kjuYBZ074A06NOuO9rXCTD3ddoOyz
 
 
+## Support My Work
+[Buy Me a Coffee](https://www.buymeacoffee.com/informatician)
+
 
 # Download and install anaconda(version 3 recommended)
 
