@@ -1,13 +1,5 @@
-# Comparative-Analysis-of-Bacterial-genomes
-Bioinformatics analysis can be challenging especially for new entrants. The purpose of this repo is to provide scripts that one can quickly use to perform comparative analysis of bacterial genomes. The scripts have been designed to automate majority of tasks so that beginners can get their hands dirty without having to struggle to assemble and use the analysis tools
 
-More bioinformatics tutorials can be found on my youtube channel: https://www.youtube.com/channel/UCOJM9xzqDc6-43j2x_vXqCQ \
-[You can buy me a coffee: https://www.buymeacoffee.com/bioinfocoach] \
-Here is a playlist for bacterial genome analysis: https://www.youtube.com/playlist?list=PLe1-kjuYBZ074A06NOuO9rXCTD3ddoOyz
-
-
-## Support My Work
-[Buy Me a Coffee](https://www.buymeacoffee.com/informatician)
+## This tutorial is forked from vappiah/bacterial-genomics-tutorial, share with our lab co-worker as educational use, Thanks alot !
 
 
 # Download and install anaconda(version 3 recommended)
@@ -84,10 +76,7 @@ pip install -r pip-requirements.txt
 ```
 ./assemble.sh
 ```
-### Step 6 : Polish the draft assembly using pilon 
-This is meant to improve the draft assembly. The scaffolds will be used. You can also modify the script to use the contigs and compare the result 
-```
-./polish.sh
+
 ```
 ### Step 7: Perform QC for both raw assembly and polished assembly
 ```
@@ -98,9 +87,7 @@ This is meant to improve the draft assembly. The scaffolds will be used. You can
 ```
 ./reorder_contigs.sh
 ```
-### Step 9: Perform a multi locus sequence typing using MLST software\
-```
-./mlst.sh
+
 ```
 ### Step 10: Check for antimicrobial resistance genes using abricate\
 ```
@@ -149,6 +136,4 @@ Good luck and see you next time
 ### Citation
 Vincent Appiah, 2020.  Bacterial Genomics Tutorial  https://github.com/vappiah/bacterial-genomics-tutorial
 
-or
 
-Vincent Appiah,2020. Youtube https://youtu.be/S_sRo_85jhs
