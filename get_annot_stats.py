@@ -37,12 +37,6 @@ def get_stats(directory,prefix):
     features.append('Insertion_Sequences')
     #print(list(set(insertion_sequences)))
 
-
-    #count pseudogenes
-    pseudo_gene_file='%s/%s.pseudo.txt'%(directory,bname)
-    pseudo_count=len(open(pseudo_gene_file,'r').readlines())
-    counts.append(pseudo_count)
-    features.append('Pseudogenes')
     
     print('Counting Annotated Features.............................')
     for feature,count in zip(features,counts):
