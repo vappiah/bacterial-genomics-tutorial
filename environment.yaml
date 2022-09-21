@@ -24,6 +24,7 @@ dependencies:
   - quast
   - porechop
   - sra-tools
+  - sickle-trim
   - pip
   - pip:
       - numpy
