@@ -22,7 +22,6 @@ dependencies:
   - mafft
   - prokka
   - quast
-  - sickle-trim
   - porechop
   - sra-tools
   - pip
