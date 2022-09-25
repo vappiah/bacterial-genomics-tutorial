@@ -6,7 +6,7 @@
 threads=4
 
 #Identify pangenomes
-roary -f pangenome -p $threads -e -n -v --maft gffs/*.gff
+roary -f pangenome -p $threads -e -n -v --mafft gffs/*.gff
 
 #Generate alignment file
 FastTree -nt -gtr pangenome/core_gene_alignment.aln > pangenome/mytree.newick
