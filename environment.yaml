@@ -22,6 +22,8 @@ dependencies:
   - mafft
   - prokka
   - quast
+  - perl-padwalker
+  - perl-db-file
   - porechop
   - sra-tools
   - sickle-trim
