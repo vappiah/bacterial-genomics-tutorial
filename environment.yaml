@@ -2,7 +2,6 @@ name: bacterial-genomics-tutorial
 channels:
   - conda-forge
   - bioconda
-  - daler
   - defaults
 dependencies:
   - samtools
