@@ -7,7 +7,7 @@ OutputForwardPaired=trimmed_reads/P7741_R1.fastq.gz
 OutputForwardUnpaired=trimmed_reads/P7741_unpaired_R1.fastq.gz
 OutputReversePaired=trimmed_reads/P7741_R2.fastq.gz
 OutputReverseUnpaired=trimmed_reads/P7741_unpaired_R2.fastq.gz
-threads=8
+threads=4
 
 trimmomatic PE -threads $threads $read1 $read2 \
 $OutputForwardPaired $OutputForwardUnpaired \
