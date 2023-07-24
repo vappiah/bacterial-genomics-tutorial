@@ -41,7 +41,7 @@ conda env create -f environment.yaml
 ### Download the polishing tool pilon
 
 ```
-mkdir apps\
+mkdir apps
 wget https://github.com/broadinstitute/pilon/releases/download/v1.23/pilon-1.23.jar -O apps/pilon.jar
 ```
 
