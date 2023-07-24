@@ -49,6 +49,10 @@ wget https://github.com/broadinstitute/pilon/releases/download/v1.23/pilon-1.23.
 ```
 source activate bacterial-genomics-tutorial
 ```
+or
+```
+conda activate bacterial-genomics-tutorial
+```
 
 ### Add permission to all scripts
 ```
