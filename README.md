@@ -15,8 +15,8 @@ Here is a playlist for bacterial genome analysis: https://www.youtube.com/playli
 ### Add channels
 
 ```
-conda config --add channels conda-forge\
-conda config --add channels bioconda\
+conda config --add channels conda-forge
+conda config --add channels bioconda
 conda config --add channels defaults
 ```
 
