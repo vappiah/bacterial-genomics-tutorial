@@ -26,6 +26,7 @@ dependencies:
   - porechop
   - sra-tools
   - sickle-trim
+  - trimmomatic
   - pip
   - pip:
       - numpy
