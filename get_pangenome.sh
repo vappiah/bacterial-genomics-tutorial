@@ -20,7 +20,7 @@ python roary_plots.py --labels pangenome/mytree.newick pangenome/gene_presence_a
 #mv all plots to pangenome folder
 mv pangenome_*.{svg,png} pangenome
 
-echo "Pangeome analysis complete"
+echo "Pangenome analysis complete"
 echo "Output: pangenome"
  
 
