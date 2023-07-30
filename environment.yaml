@@ -27,7 +27,6 @@ dependencies:
   - sra-tools
   - sickle-trim
   - trimmomatic
-  - biopython
   - pip
   - pip:
       - numpy
