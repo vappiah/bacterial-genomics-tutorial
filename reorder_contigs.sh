@@ -11,5 +11,5 @@ ragtag.py scaffold $ref P7741.polished.fasta -o P7741_reordered
 #the scripts accept name of the ragtag file containing the reordered contigs and accession number for the reference genome
 #accession number is found in the first line of the reference genome fasta file
 
-python extract_reordered.py P7741_reordered/ragtag.scaffold.fasta NC_020133.1
+python extract_reordered.py P7741_reordered/ragtag.scaffold.fasta NC_008611.1
 
