@@ -15,3 +15,4 @@ done
 
 cp P7741_annotation/P7741.gff gffs/
 
+ls gffs
