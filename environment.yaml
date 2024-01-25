@@ -4,8 +4,6 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - samtools
-  - bwa
   - sickle
   - fastqc
   - python=3
@@ -13,19 +11,8 @@ dependencies:
   - ragtag
   - abricate
   - mlst
-  - spades
-  - minimap2
-  - mummer
-  - mash
-  - roary
-  - mafft
   - prokka
   - quast
-  - perl-padwalker
-  - perl-db-file
-  - porechop
-  - sra-tools
-  - sickle-trim
   - trimmomatic
   - pip
   - pip:
@@ -34,3 +21,16 @@ dependencies:
       - matplotlib-venn
       - biopython
       - dREP
+      - minimap2
+      - mafft
+      - perl-db-file
+      - perl-padwalker
+      - porechop
+      - mash
+      - roary
+      - spades
+      - samtools
+      - bwa
+      - sra-tools
+      - sickle-trim
+      - mummer
